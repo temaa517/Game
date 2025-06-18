@@ -1,0 +1,26 @@
+﻿  Game.cpp
+C:\Users\Ruslan\Desktop\Game\Game.cpp(44,56): warning C4244: аргумент: преобразование "unsigned int" в "T", возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(44,56): warning C4244:         with
+C:\Users\Ruslan\Desktop\Game\Game.cpp(44,56): warning C4244:         [
+C:\Users\Ruslan\Desktop\Game\Game.cpp(44,56): warning C4244:             T=float
+C:\Users\Ruslan\Desktop\Game\Game.cpp(44,56): warning C4244:         ]
+C:\Users\Ruslan\Desktop\Game\Game.cpp(59,63): warning C4244: аргумент: преобразование "unsigned int" в "T", возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(59,63): warning C4244:         with
+C:\Users\Ruslan\Desktop\Game\Game.cpp(59,63): warning C4244:         [
+C:\Users\Ruslan\Desktop\Game\Game.cpp(59,63): warning C4244:             T=float
+C:\Users\Ruslan\Desktop\Game\Game.cpp(59,63): warning C4244:         ]
+C:\Users\Ruslan\Desktop\Game\Game.cpp(90,41): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(254,37): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(259,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(583,56): warning C4244: аргумент: преобразование "size_t" в "float", возможна потеря данных
+C:\Users\Ruslan\Desktop\Game\Game.cpp(703,24): warning C4129: s: неизвестная escape-последовательность
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: float __cdecl sf::SoundSource::getVolume(void)const " (__imp_?getVolume@SoundSource@sf@@QEBAMXZ).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::SoundSource::setVolume(float)" (__imp_?setVolume@SoundSource@sf@@QEAAXM@Z).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl sf::Music::openFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?openFromFile@Music@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __cdecl sf::Music::~Music(void)" (__imp_??1Music@sf@@UEAA@XZ).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __cdecl sf::Music::Music(void)" (__imp_??0Music@sf@@QEAA@XZ).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl sf::SoundStream::setLoop(bool)" (__imp_?setLoop@SoundStream@sf@@QEAAX_N@Z).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual enum sf::SoundSource::Status __cdecl sf::SoundStream::getStatus(void)const " (__imp_?getStatus@SoundStream@sf@@UEBA?AW4Status@SoundSource@2@XZ).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual void __cdecl sf::SoundStream::pause(void)" (__imp_?pause@SoundStream@sf@@UEAAXXZ).
+Game.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual void __cdecl sf::SoundStream::play(void)" (__imp_?play@SoundStream@sf@@UEAAXXZ).
+C:\Users\Ruslan\Desktop\Game\x64\Release\Game.exe : fatal error LNK1120: неразрешенных внешних элементов: 9
