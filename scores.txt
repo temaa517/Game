@@ -12,6 +12,7 @@ victor 12
 test44 11
 test44 9
 test44 7
+test44 7
 test44 6
 victor 4
 victor 3

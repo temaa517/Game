@@ -727,7 +727,7 @@ private:
     }
 
     void drawScore(RenderWindow& window) {
-        if (!scoreFont.loadFromFile("timesi.ttf")) {
+        if (!scoreFont.loadFromFile("font1.ttf")) {
             std::cerr << "Error loading font for score!" << std::endl;
             return;
         }
@@ -764,7 +764,7 @@ public:
         gameClock.restart();
 
         // Загрузка шрифта для счета
-        if (!scoreFont.loadFromFile("timesi.ttf")) {
+        if (!scoreFont.loadFromFile("font1.ttf")) {
             std::cerr << "Error loading font for score!" << std::endl;
         }
 
@@ -1272,8 +1272,8 @@ int main() {
     window.setFramerateLimit(60);
 
     Font font;
-    if (!font.loadFromFile("timesi.ttf")) {
-        std::cerr << "Error loading font! Make sure 'timesi.ttf' is in the correct directory." << std::endl;
+    if (!font.loadFromFile("font1.ttf")) {
+        std::cerr << "Error loading font! Make sure 'font1.ttf' is in the correct directory." << std::endl;
         return -1;
     }
 
@@ -1612,13 +1612,14 @@ int main() {
                             // Если вернулись в паузу, музыку не проигрываем
                         }
                     }
-                    else if (currentGameState == LEADERBOARD) {
-                        if (event.type == Event::MouseButtonReleased && event.mouseButton.button == Mouse::Left) {
-                            if (leaderboardBackButton.handleClick(window, event, clickSfx)) {
-                                currentGameState = MENU;
-                                musicManager.play("menu");
-                            }
-                        }
+                    
+                }
+            }
+            else if (currentGameState == LEADERBOARD) {
+                if (event.type == Event::MouseButtonReleased && event.mouseButton.button == Mouse::Left) {
+                    if (leaderboardBackButton.handleClick(window, event, clickSfx)) {
+                        currentGameState = MENU;
+                        musicManager.play("menu");
                     }
                 }
             }
