@@ -1218,7 +1218,7 @@ void drawSettingsScreen(RenderWindow& window, Font& font, const Sprite& backgrou
     saveButton.draw(window);
 
     // Back Button
-    backButton = Button(fromPauseMenu ? "Back to Pause" : "Back to Menu",
+    backButton = Button(fromPauseMenu ? "Вернуться в паузу" : "Вернуться в меню",
         font, buttonFontSize,
         Vector2f(static_cast<float>(GLOBAL_WIDTH) / 2, startY + verticalSpacing * 3),
         SECONDARY_COLOR);
@@ -1322,7 +1322,7 @@ int main() {
     Text loginErrorText("", font, labelFontSize * 0.8f);
     loginErrorText.setFillColor(ACCENT_COLOR);
     loginErrorText.setOrigin(loginErrorText.getLocalBounds().width / 2.0f, loginErrorText.getLocalBounds().height / 2.0f);
-    Button loginButton("Авторизация", font, buttonFontSize, Vector2f(static_cast<float>(GLOBAL_WIDTH) / 2, static_cast<float>(GLOBAL_HEIGHT) * 0.68f), SECONDARY_COLOR); // SECONDARY_COLOR для фона
+    Button loginButton("клоунизация", font, buttonFontSize, Vector2f(static_cast<float>(GLOBAL_WIDTH) / 2, static_cast<float>(GLOBAL_HEIGHT) * 0.68f), SECONDARY_COLOR); // SECONDARY_COLOR для фона
     Button registerButton("Регистрация", font, buttonFontSize, Vector2f(static_cast<float>(GLOBAL_WIDTH) / 2, static_cast<float>(GLOBAL_HEIGHT) * 0.78f), SECONDARY_COLOR);
 
     // Register UI elements
